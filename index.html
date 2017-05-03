@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title</title>
+    <title>Lab SC - Pelatihan Machine Learning</title>
     <meta charset="utf-8">
     <link href="slides-resources/style.css" rel="stylesheet" />
   </head>
@@ -30,7 +30,7 @@ background-image: url(slides-resources/keras-logo.jpg)
 
 3. Instalasi Keras
 
-4. Klasifikasi citra (gak nyampe 100 baris) menggunakan Keras ([notebook](https://github.com/gggdomi/keras-workshop/blob/master/notebook.ipynb))
+4. Klasifikasi citra (gak nyampe 100 baris) menggunakan Keras 
     - Data loading
     - Model definition, training and evaluation
     - Metode data augmentation
@@ -61,13 +61,14 @@ Lebi banyak lapisan = abstraksi yang lebih baik
 
 - [Alphago](https://deepmind.com/research/alphago/)
 
-- Image tagging :
+- Object detection :
 
 <img src="slides-resources/demo-dnn-tagging.png" style="width: 100%" />
 ---
 # Deep Learning Bisa Apa?
 
-- [Wavenet](https://deepmind.com/blog/wavenet-generative-model-raw-audio/)
+- [Wavenet](https://deepmind.com/blog/wavenet-generative-model-raw-audio/) : 
+Generate speech which mimics any human voice and which sounds more natural than the best existing Text-to-Speech systems
 
 - Style transfer :
 
@@ -106,14 +107,14 @@ background-image: url(slides-resources/keras-logo.jpg)
 .right-column[
 ### Dozens of frameworks are available :
 - [Theano](http://deeplearning.net/software/theano/index.html)
-    - Lower level
+    - Tingkat rendah
     
 - [TensorFlow](https://www.tensorflow.org/)
-    - Lower level
+    - Tingkat rendah
 
 - [Torch](http://torch.ch/)
-    - Similar to Keras in use
-    - Written in Lua
+    - Mirip dengan Keras
+    - Menggunakan bahasa Lua
     
 - [Caffee](http://caffe.berkeleyvision.org/)
 
@@ -132,18 +133,18 @@ background-image: url(slides-resources/keras-logo.jpg)
 ]
 .right-column[
 ### Some specifics of Keras :
-- Backend agnostic
+- Berjalan diatas beberapa backend berbeda
     - Theano, TensorFlow... and more to come
 
-- Efficient
-    - ... as Theano or TensorFlow
+- Efisien
+    - ... sama seperti Theano or TensorFlow
     
-    - GPU computation
+    - komputasi menggunakan GPU
 
-- Written in Python
+- Menggunakan bahasa python
 
-- High-level of abstraction
-    - Ease-of-use and readability
+- Memiliki abstraksi tingkat tinggi
+    - Mudah digunakan dan mudah dipahami
 
 ]
 ---
@@ -177,12 +178,12 @@ history = model.fit(X, y, nb_epoch=10000, batch_size=4)
 print(model.predict(X))
 ```
 
-- [Comparison with a TensorFlow implementation](https://gist.github.com/cburgdorf/e2fb46e5ad61ed7b9a29029c5cc30134)
+- [Perbndingan implementasi Keras vs TensorFlow implementation](https://gist.github.com/cburgdorf/e2fb46e5ad61ed7b9a29029c5cc30134)
 
 - Deep Compositional Captioning: Describing Novel Object Categories without Paired Training Data
     
-    - [Original paper](https://arxiv.org/pdf/1511.05284v2)
-    - [Keras implementation](https://gist.github.com/fchollet/0ecc151189b997fd4400bc2fecf2489f)
+    - [Paper](https://arxiv.org/pdf/1511.05284v2)
+    - [Implementasi dalam Keras](https://gist.github.com/fchollet/0ecc151189b997fd4400bc2fecf2489f)
 ]
 ---
 template: inverse
@@ -223,30 +224,30 @@ layout: false
 background-image: url(slides-resources/keras-logo.jpg)
 ## Classifying dogs vs cats pictures
 
-- Kaggle competition launched in late 2013
+- Kompetisi Kaggle yang dibuka pada tahun 2013
 
 > *"The current literature suggests machine classifiers can score above 80% accuracy on this task"*
 
 
 --
-- Leaderboard (frozen in 2014)
+- Leaderboard (dibekukan 2014)
 
     - top 100 : 80% accuracy
     - top 10 : 98% accuracy
 
 --
-- [Dataset](https://www.kaggle.com/c/dogs-vs-cats/data) : 12,500 pictures of cats + 12,500 of dogs
+- [Dataset](https://www.kaggle.com/c/dogs-vs-cats/data) : 12,500 citra kucing + 12,500 citra anjing
 
 
 --
-- We will only consider 1,000 pictures of each (8% of the dataset) 
+- Kita hanya akan menggunakan 1000 citra dari masing-masing kelas (8% dari dataset) 
 ---
 class: center, middle
 # Go to the
 # [notebook](https://github.com/gggdomi/keras-workshop/blob/master/notebook.ipynb)
 ---
 template: inverse
-# Thanks !
+# Matur nuwun!
 
 <br/>
 
